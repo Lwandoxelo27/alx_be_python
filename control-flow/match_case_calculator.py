@@ -23,3 +23,4 @@ match operation:
 
 # Output the Result
 print(f"The result of {num1} {operation} {num2} is {result}")
+print("The result is {result}")
