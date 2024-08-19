@@ -1,5 +1,5 @@
 # Prompt for User Input
-num1 = float(input("Ebter the first number: "))
+num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 operation = input("Choose the operation (+, -, *, /): ")
 
@@ -22,4 +22,4 @@ match operation:
         exit()
 
 # Output the Result
-print(f"The result of {num1} {operation} {num2} is {result}")
+print(f"The result of {num1} {operation} {num2} is: {result}")
