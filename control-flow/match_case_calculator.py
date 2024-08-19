@@ -22,4 +22,4 @@ match operation:
         exit()
 
 # Output the Result
-print(f"The result of {num1} {operation} {num2} is: {result}")
+print(f"The result of {num1} {operation} {num2} is {result}")
