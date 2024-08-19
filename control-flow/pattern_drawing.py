@@ -8,5 +8,4 @@ while row < size:
     for col in range(size):
         print("*", ends="")
     # Move to next line after each row
-    print()
-    row += 1    
+    print("*", ends=)
