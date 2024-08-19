@@ -1,5 +1,5 @@
 # Prompt User for Pattern Size
-size = int(input("Enter the sixe of the pattern: "))
+size = input("Enter the sixe of the pattern: ")
 
 # Draw the Pattern
 for i in range(size):
