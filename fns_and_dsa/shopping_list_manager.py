@@ -12,6 +12,7 @@ def display_menu():
 # Main loop
 while True:
     display_menu()
+    input("Enter the item to add: ")
     choice = input("Enter your choice: ")
     if choice == "1":
         add_item()
