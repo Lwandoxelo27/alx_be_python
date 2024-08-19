@@ -14,7 +14,7 @@ match priority:
     case _=
         priority_message = "Unknown priority"
 
-if time_bound.lower() == "yes":
+if time_bound == "yes":
     time_message = "that requires immediate attention today!"
 else:
     time_message = ""
