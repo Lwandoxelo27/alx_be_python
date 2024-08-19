@@ -1,5 +1,5 @@
 # Prompt User for Weather Input
-weather = int(input("What is the weather like today? (sunny/cold):"))
+weather = int(input("What is the weather like today? (sunny/rainy/cold):"))
                 
 # Provide Clothing
 if weather >= "sunny":
