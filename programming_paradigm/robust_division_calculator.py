@@ -9,23 +9,22 @@ def safe_divide(numerator, denominator):
     except ValueError:
         return "Error: Please enter numeric values only."
     except ZeroDivisionError:
-        return "Error: Cannot divide by zero.."
+        return "Error: Cannot divide by zero."
     
 
 import sys
 from robust_division_calculator import safe_divide
 
 def main():
-    print("Robust Division Calculator")
-    print("-------------------------")
-    while True:
-        numerator = input("Enter the numerator: ")
-        denominator = input("Enter the denominator: ")
-        result = rdc.safe_divide(numerator, denominator)
-        print(result)
-        again = input("Do you want to calculate again? (y/n): ")
-        if again.lower() != 'y':
-            break
+    if len(sys.argv) != 3:
+        print("Usage: python main.py <numerator> <denominator>")
+        sys.exit(1)
 
+    numerator = sys.argv[1]
+    denominator = sys.argv[2]
+
+    result = safe_divide(numerator, denominator)
+    print(result)
+    
 if __name__ == "__main__":
     main()
