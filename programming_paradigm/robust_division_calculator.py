@@ -5,6 +5,7 @@ def safe_divide(numerator, denominator):
         if denominator == 0:
             raise ZeroDivisionError
         return numerator / denominator
+        return result
     except ValueError:
         return "Error: Please enter numeric values only."
     except ZeroDivisionError:
@@ -12,7 +13,7 @@ def safe_divide(numerator, denominator):
     
 
 import sys
-import robust_division_calculator as rdc
+from robust_division_calculator import safe_divide
 
 def main():
     print("Robust Division Calculator")
