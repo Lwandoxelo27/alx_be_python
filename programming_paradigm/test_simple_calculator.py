@@ -20,9 +20,9 @@ class TestSimpleCalculator(unittest.TestCase):
 
     def test_multiplication(self):
         """Test the multiplication method"""
-        self.assertEqual(self.calc.multuplication(4, 5), 20)
-        self.assertEqual(self.calc.multiplication(-2, 3), -6)
-        self.assertEqual(self.calc.multiplication(0, 5), 0)
+        self.assertEqual(self.calc.multuply(4, 5), 20)
+        self.assertEqual(self.calc.multiply(-2, 3), -6)
+        self.assertEqual(self.calc.multiply(0, 5), 0)
 
     def test_division(self):
         """Test the division method"""
